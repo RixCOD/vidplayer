@@ -263,4 +263,4 @@ This project is open-source under the [MIT License](LICENSE).
 
 ## 👤 Author & Built With
 
-Built with **Node.js**, **Express.js**, **FFmpeg**, and **HLS Streaming**. Perfect for hosting and streaming personal anime collections through a custom web interface! 🚀
+Built By RixCOD(Anshu) with **Node.js**, **Express.js**, **FFmpeg**, and **HLS Streaming**. Perfect for hosting and streaming personal anime collections through a custom web interface! 🚀
