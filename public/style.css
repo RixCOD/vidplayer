@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    background: #0f1117;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 300px;
+    overflow: auto;
+    background: #181c24;
+    border-right: 1px solid #333;
+}
+
+.sidebar h2 {
+    padding: 15px;
+}
+
+.sidebar li {
+    list-style: none;
+    padding: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #222;
+}
+
+.sidebar li:hover {
+    background: #2b3240;
+}
+
+.playerArea {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.videoContainer {
+    position: relative;
+}
+
+video {
+    width: 100%;
+    height: 72vh;
+    background: black;
+    border-radius: 12px;
+}
+
+.controls {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.controls button,
+.extraControls button,
+select {
+    background: #202736;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.progressWrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#seekBar {
+    flex: 1;
+}
+
+.extraControls {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 10px;
+    display: none;
+}
+
+
+
+
+
+
+/* sidebar */
+.sidebar {
+    width: 320px;
+    background: #111827;
+    overflow-y: auto;
+    border-right: 1px solid #222;
+}
+
+.episode-card {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #222;
+}
+
+.episode-card:hover {
+    background: #1f2937;
+}
+
+.episode-thumb {
+    width: 120px;
+    height: 68px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.episode-title {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Active Episode */
+
+.episode-card.active {
+
+    background: #2563eb;
+}
+
+.episode-card.active:hover {
+
+    background: #2563eb;
+}
+
+/* Better Scrollbar */
+
+.sidebar::-webkit-scrollbar {
+
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+
+    background: #111827;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+
+    background: #374151;
+    border-radius: 10px;
+}
+
+/* Episode Info */
+
+.episode-info {
+
+    display: flex;
+    align-items: center;
+}
+
+.episode-title {
+
+    font-size: 14px;
+    font-weight: 500;
+
+    overflow: hidden;
+    display: -webkit-box;
+
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+
+    -webkit-box-orient: vertical;
+}
+
+/* Current Episode */
+
+.currentEpisode {
+
+    padding: 10px 0;
+
+    color: #60a5fa;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Plyr Custom */
+
+.plyr {
+
+    border-radius: 12px;
+}
+
+.plyr--video {
+
+    height: 100%;
+}
+
+/* Loading Animation */
+
+.loader {
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.loader::after {
+
+    content: "";
+
+    display: inline-block;
+
+    width: 18px;
+    height: 18px;
+
+    margin-left: 10px;
+
+    border: 3px solid white;
+    border-top-color: transparent;
+
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+
+    to {
+
+        transform: rotate(360deg);
+    }
+}
+
+/* Mobile */
+
+@media(max-width:900px) {
+
+    body {
+
+        flex-direction: column;
+    }
+
+    .sidebar {
+
+        width: 100%;
+        height: 250px;
+    }
+
+    .playerArea {
+
+        height: calc(100vh - 250px);
+    }
+
+    .episode-thumb {
+
+        width: 100px;
+        height: 56px;
+    }
+}

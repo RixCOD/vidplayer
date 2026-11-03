@@ -1,0 +1,19 @@
+{
+  "name": "i.got.a.cheat.skill.in.another.world.and.became.unrivaled.in.the.real.world.too.s01.1080p.amzn.web-dl.multi.ddp2.0.h.264-4khdhub.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "fluent-ffmpeg": "^2.1.3"
+  }
+}
